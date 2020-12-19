@@ -6,7 +6,7 @@ const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
  * to customize this controller
  */
 
-const stripe = require('stripe')('sk_test_51Hyq4NFCEMnfAHVZePFoTKMCLKYFDLy7iwPKSmZFrJGUJAZnEPVKHaXuE4W0PKjWciAMoeG8ZQeLDpNpH3toys8700RgheUTuI')
+const stripe = require('stripe')(process.env.STRIPE_KEY)
 
 const MY_DOMAIN = 'http://localhost:3000/cart';
 
