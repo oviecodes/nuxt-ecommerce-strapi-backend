@@ -6,12 +6,9 @@ const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
  * to customize this controller
  */
 
-/*
-** for production comment out the stripe constant above and uncomment the line below
-*/
-const stripe = require('stripe')(process.env.STRIPE_KEY)
+const stripe = require('stripe')('sk_test_51Hyq4NFCEMnfAHVZePFoTKMCLKYFDLy7iwPKSmZFrJGUJAZnEPVKHaXuE4W0PKjWciAMoeG8ZQeLDpNpH3toys8700RgheUTuI')
 
-const MY_DOMAIN = 'https://nuxt-strapi-ecommerce.herokuapp.com/cart';
+const MY_DOMAIN = 'https://localhost:3000/cart';
 
 module.exports = {
     async create(ctx) {
