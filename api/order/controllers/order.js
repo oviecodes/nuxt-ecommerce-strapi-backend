@@ -23,7 +23,7 @@ module.exports = {
                     name: cartItem.name,
                     images: ['https://i.imgur.com/EHyR2nP.png']
                 },
-                unit_amount: cartItem.price * 100,
+                unit_amount: (cartItem.price * 100).toFixed(0),
             },
             item.quantity = cartItem.quantity
             return item;
