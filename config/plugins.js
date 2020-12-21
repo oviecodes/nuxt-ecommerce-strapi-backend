@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
     providerOptions: {
       accessKeyId: env('AWS_ACCESS_KEY_ID') ,
       secretAccessKey: env('AWS_ACCESS_SECRET'),
-      region: 'US East (N. Virginia) us-east-1',
+      region: '',
       params: {
         Bucket: 'nuxtstrapiecommerce',
       },
