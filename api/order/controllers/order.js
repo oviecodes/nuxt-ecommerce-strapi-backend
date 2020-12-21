@@ -15,6 +15,7 @@ module.exports = {
 
         console.log('ctx', ctx.request.body)
         const { cartDetail, cartTotal } = ctx.request.body
+        //build line items array
         const line_items = cartDetail.map((cartItem) => {
             const item = {}
             item.price_data = {
