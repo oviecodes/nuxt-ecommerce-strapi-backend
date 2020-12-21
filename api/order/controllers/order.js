@@ -21,7 +21,7 @@ module.exports = {
                 currency: 'usd',
                 product_data: {
                     name: cartItem.name,
-                    images: ['https://i.imgur.com/EHyR2nP.png']
+                    images: [`${cartItem.url}`]
                 },
                 unit_amount: (cartItem.price * 100).toFixed(0),
             },
