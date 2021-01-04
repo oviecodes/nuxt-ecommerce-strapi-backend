@@ -29,7 +29,7 @@ module.exports = {
             item.quantity = cartItem.quantity
             return item;
         })
-        await strapi.services.order.create(line_items)
+        await strapi.services.order.create({Item: line_items})
         console.log('line_items', line_items)
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
