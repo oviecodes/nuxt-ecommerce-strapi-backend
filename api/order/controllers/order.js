@@ -29,6 +29,7 @@ module.exports = {
             item.quantity = cartItem.quantity
             return item;
         })
+        // create order
         await strapi.services.order.create({Item: line_items})
         console.log('line_items', line_items)
         const session = await stripe.checkout.sessions.create({
