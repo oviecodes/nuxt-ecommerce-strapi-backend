@@ -6,7 +6,7 @@
 
  const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
  
- const stripe = require('stripe')(process.env.STRIPE_KEY)
+ const stripe = require('stripe')(process.env.STRIPE_KEY) 
  
  const MY_DOMAIN = 'https://nuxt-strapi-ecommerce.herokuapp.com/cart';
 
