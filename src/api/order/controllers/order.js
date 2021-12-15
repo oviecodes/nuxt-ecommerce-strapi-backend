@@ -16,7 +16,7 @@ const { createCoreController } = require('@strapi/strapi').factories;
 module.exports = createCoreController('api::order.order', ({ strapi }) => ({
     async create(ctx) {
 
-                console.log('ctx', ctx.request.body)
+                // console.log('ctx', ctx.request.body)
                 const { cartDetail, cartTotal } = ctx.request.body
                 // build line items array
                 const line_items = cartDetail.map((cartItem) => {
@@ -32,7 +32,6 @@ module.exports = createCoreController('api::order.order', ({ strapi }) => ({
                     item.quantity = cartItem.quantity
                     return item;
                 })
-                console.log('line_items', line_items)
                 // create order
                 // const response = await super.create(ctx);
                 // await strapi.service('api::order.order').create({

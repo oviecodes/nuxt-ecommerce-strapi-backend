@@ -1711,6 +1711,14 @@
     "@strapi/utils" "4.0.0"
     sendmail "^1.6.1"
 
+"@strapi/provider-upload-aws-s3@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.0.0.tgz#7852a3652793ebf58fe08f1ba4cefc6bff291f99"
+  integrity sha512-CiB48FZn/2vhAAcmEjeZOEIA2C5wcSZAxQj3BK3wGLWCrvRasYW1zJhjRI1yRDvFcNxlNq328gF0bm1d0LkhZA==
+  dependencies:
+    aws-sdk "2.892.0"
+    lodash "4.17.21"
+
 "@strapi/provider-upload-local@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@strapi/provider-upload-local/-/provider-upload-local-4.0.0.tgz#20c3281baddcaee7354f94e2e0b52b512c2cc419"
@@ -9331,14 +9339,6 @@ std-env@^2.2.1:
   integrity sha512-eOsoKTWnr6C8aWrqJJ2KAReXoa7Vn5Ywyw6uCXgA/xDhxPoaIsBa5aNJmISY04dLwXPBnDHW4diGM7Sn5K4R/g==
   dependencies:
     ci-info "^3.1.1"
-
-strapi-provider-upload-aws-s3@^3.6.8:
-  version "3.6.8"
-  resolved "https://registry.yarnpkg.com/strapi-provider-upload-aws-s3/-/strapi-provider-upload-aws-s3-3.6.8.tgz#4fef97a417d1f26beb80a167a52e2dc4b106a2c3"
-  integrity sha512-JjyV35e8A3geKn0xeomP4qwxnyJ7CH3+cmr8Olz68NzX/XvHl1cgkECZep9EbDPWoD8tH6/WAhpg6DhjedVzPw==
-  dependencies:
-    aws-sdk "2.892.0"
-    lodash "4.17.21"
 
 stream-browserify@^3.0.0:
   version "3.0.0"
